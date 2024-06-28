@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.input-container p {
+    margin: 0 0 5px 0;
+}
+
+.centered-input {
+    width: 33.33%; /* Sets the width to 1/3 of the screen */
+    padding: 10px; /* Adds some padding for better appearance */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    border: 1px solid #ccc; /* Adds a border for visual distinction */
+    font-size: 16px; /* Sets a default font size */
+    border-radius: 5px; /* Slightly rounded corners */
+    text-align: center; /* Centers the text inside the input */
+}
+
+@media (max-width: 768px) {
+    .centered-input {
+        width: 50%; /* Adjust the width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .centered-input {
+        width: 80%; /* Further adjust the width for very small screens */
+    }
+}
